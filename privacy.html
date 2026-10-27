@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Confidentialité MayDo</title>
+<meta name="description" content="Politique de confidentialité de MayDo et MayDo Server : aucune collecte, traitement local, services tiers choisis par l'utilisateur.">
+<link rel="icon" href="assets/icon.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <img src="assets/icon.png" alt="">
+  <a class="brand" href="./">May<span>Do</span></a>
+  <nav class="links"><a href="./">Accueil</a><a href="support.html">Assistance</a><a href="privacy.html" aria-current="page">Confidentialité</a></nav>
+</div></header>
+
+<main class="doc wrap">
+  <h1>Politique de confidentialité</h1>
+  <p class="meta">MayDo pour iPhone et MayDo Server pour Mac · En vigueur le 27 octobre 2026 · <a href="#en">English version</a></p>
+
+  <div class="summary">
+    <strong>L'essentiel</strong>
+    <ul>
+      <li><strong>Nous ne collectons aucune donnée personnelle.</strong> MayDo n'a ni compte, ni serveur central, ni publicité, ni mesure d'audience, ni traceur.</li>
+      <li>Vos conversations, notes, tâches, documents et souvenirs sont <strong>stockés sur votre iPhone</strong>, et sur votre Mac si vous utilisez MayDo Server.</li>
+      <li>Les modèles d'IA locaux fonctionnent <strong>sur l'appareil</strong>. Aucun texte ne quitte l'iPhone quand vous les utilisez.</li>
+      <li>Certaines fonctions contactent des <strong>services tiers que vous choisissez</strong> (fournisseur d'IA cloud, moteur de recherche web, téléchargement de modèles). Elles sont décrites ci-dessous, avec ce qui est envoyé.</li>
+      <li>Chaque source de données (agenda, santé, contacts…) se contrôle dans <strong>Mémoire › Autorisations</strong> et dans les réglages d'iOS.</li>
+    </ul>
+  </div>
+
+  <ol class="toc">
+    <li><a href="#qui">Qui sommes-nous</a></li>
+    <li><a href="#collecte">Données que nous collectons</a></li>
+    <li><a href="#local">Données stockées sur vos appareils</a></li>
+    <li><a href="#permissions">Autorisations d'iOS</a></li>
+    <li><a href="#ia">Modèles d'IA</a></li>
+    <li><a href="#tiers">Services tiers</a></li>
+    <li><a href="#server">MayDo Server</a></li>
+    <li><a href="#memoire">Mémoire et agents</a></li>
+    <li><a href="#securite">Sécurité</a></li>
+    <li><a href="#conservation">Conservation et suppression</a></li>
+    <li><a href="#droits">Vos droits</a></li>
+    <li><a href="#enfants">Enfants</a></li>
+    <li><a href="#apple">Apple et TestFlight</a></li>
+    <li><a href="#modifs">Modifications</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+
+  <h2 id="qui">1. Qui sommes-nous</h2>
+  <p>MayDo et MayDo Server sont développés par un développeur indépendant publiant sous le nom <strong>Oneil974</strong>. Comme nous ne recevons aucune donnée personnelle, nous ne sommes destinataires d'aucune de vos informations au sens du Règlement général sur la protection des données (RGPD). Pour toute question, voir la section <a href="#contact">Contact</a>.</p>
+
+  <h2 id="collecte">2. Données que nous collectons</h2>
+  <p><strong>Aucune.</strong> Nous n'exploitons aucun serveur qui recevrait vos données. MayDo n'intègre aucun kit de publicité, de mesure d'audience, de suivi ou d'analyse tiers. Nous ne vendons, ne louons et ne partageons aucune donnée, et nous ne pratiquons aucun suivi entre apps ou sites (« tracking » au sens d'Apple).</p>
+  <p>Les seules informations qui pourraient nous parvenir sont celles que vous choisissez de nous envoyer : un message d'assistance (par exemple une demande sur GitHub) ou un commentaire TestFlight. Elles ne servent qu'à vous répondre et à corriger l'app.</p>
+
+  <h2 id="local">3. Données stockées sur vos appareils</h2>
+  <p>Pour fonctionner, MayDo enregistre sur votre iPhone, dans son espace privé :</p>
+  <ul>
+    <li>vos conversations avec l'assistant et leurs statistiques de génération ;</li>
+    <li>vos notes, tâches, projets, documents importés ou rédigés, dossiers interrogeables et productions gardées depuis les mini-apps ;</li>
+    <li>la mémoire : informations que vous avez validées (préférences, personnes, lieux, faits) et propositions en attente de confirmation ;</li>
+    <li>vos agents, leurs missions, leurs programmations et leurs comptes rendus ;</li>
+    <li>vos réglages, dont l'adresse d'un serveur d'IA et les clés d'appairage ;</li>
+    <li>les modèles d'IA téléchargés.</li>
+  </ul>
+  <p>Les clés API des fournisseurs cloud sont conservées dans le <strong>trousseau d'iOS</strong>. Les widgets accèdent à un résumé via un groupe d'apps partagé, qui reste sur l'appareil. Ces données font partie de la sauvegarde de votre iPhone (iCloud ou ordinateur) selon vos réglages iOS ; cette sauvegarde est gérée par Apple et par vous, pas par nous.</p>
+
+  <h2 id="permissions">4. Autorisations d'iOS</h2>
+  <p>MayDo ne demande une autorisation qu'au moment où une fonction en a besoin. Vous pouvez la refuser ou la retirer à tout moment dans Réglages iOS › Confidentialité et sécurité, et désactiver chaque source dans Mémoire › Autorisations.</p>
+  <div class="table-scroll"><table>
+    <tr><th>Autorisation</th><th>Utilisation</th><th>Où vont les données</th></tr>
+    <tr><td>Agenda</td><td>Lire vos évènements pour planifier, ajouter ceux que vous validez.</td><td>Restent sur l'iPhone. Envoyées à un modèle cloud seulement si vous l'avez autorisé.</td></tr>
+    <tr><td>Rappels</td><td>Lire et créer des rappels quand vous le demandez.</td><td>Idem.</td></tr>
+    <tr><td>Contacts</td><td>Trouver un contact pour préparer un appel, un SMS ou un e-mail que vous lancez vous-même.</td><td>Idem. Les messages partent via les apps d'Apple, jamais par MayDo.</td></tr>
+    <tr><td>Santé (lecture)</td><td>Résumer activité, sommeil, cœur et poids à l'assistant. MayDo n'écrit rien dans Santé.</td><td>Restent sur l'iPhone. Jamais envoyées à un modèle cloud sans votre autorisation explicite et distincte. Jamais utilisées à des fins publicitaires.</td></tr>
+    <tr><td>Position (pendant l'utilisation)</td><td>Météo locale, « où suis-je », itinéraires.</td><td>Ville ou coordonnées envoyées au service météo ou de cartes concerné (voir services tiers).</td></tr>
+    <tr><td>Microphone et reconnaissance vocale</td><td>Dicter une demande.</td><td>Transcription par le système iOS ; le texte obtenu est traité comme une demande écrite.</td></tr>
+    <tr><td>Caméra et photothèque</td><td>Analyser une image que vous prenez ou choisissez ; enregistrer les images que vous créez.</td><td>Analyse sur l'appareil, ou par le modèle cloud si c'est le moteur choisi.</td></tr>
+    <tr><td>Musique</td><td>Lancer la musique de votre bibliothèque.</td><td>Reste sur l'iPhone.</td></tr>
+    <tr><td>Réseau local et Bluetooth</td><td>Communiquer avec MayDo Server et avec les appareils que vous choisissez sur votre réseau.</td><td>Restent sur votre réseau local.</td></tr>
+    <tr><td>Mouvement</td><td>Économiser le GPS à l'arrêt.</td><td>Reste sur l'iPhone.</td></tr>
+  </table></div>
+  <p>Certaines fonctions liées à ces autorisations (maison, voiture, coach sportif) sont désactivées dans la version actuelle et ne demandent pas d'accès tant qu'elles ne sont pas disponibles.</p>
+
+  <h2 id="ia">5. Modèles d'IA</h2>
+  <h3>Modèles locaux</h3>
+  <p>Les modèles locaux (par exemple Liquid AI) et Apple Intelligence s'exécutent sur l'iPhone, ou sur votre Mac avec MayDo Server. Vos demandes et les données jointes ne quittent pas vos appareils.</p>
+  <h3>Modèles cloud (facultatifs)</h3>
+  <p>Si vous configurez un fournisseur d'IA en ligne avec <strong>votre propre clé API</strong> (OpenAI, Anthropic, Mistral, Google Gemini, Groq, OpenRouter, xAI, DeepSeek ou un serveur compatible), vos demandes, l'historique utile de la conversation et les données que l'assistant a besoin de joindre sont envoyés <strong>directement</strong> de votre iPhone à ce fournisseur. Nous ne les recevons pas. Ce fournisseur les traite selon ses propres conditions et sa politique de confidentialité, que nous vous invitons à lire.</p>
+  <p>Avant le premier envoi, MayDo vous demande votre accord. Les données personnelles (agenda, tâches, contacts, santé, mémoire…) ne sont jointes que si l'option « Envoyer mes données au modèle distant » est activée dans Mémoire › Autorisations. Les données de santé demandent une autorisation supplémentaire et distincte.</p>
+
+  <h2 id="tiers">6. Services tiers</h2>
+  <p>Selon les fonctions que vous utilisez, MayDo contacte directement les services suivants. Comme pour toute connexion Internet, ils peuvent voir l'adresse IP de votre appareil.</p>
+  <div class="table-scroll"><table>
+    <tr><th>Service</th><th>Quand</th><th>Ce qui est envoyé</th></tr>
+    <tr><td>Hugging Face</td><td>Téléchargement d'un modèle d'IA</td><td>La demande de téléchargement du fichier du modèle.</td></tr>
+    <tr><td>Moteur de recherche choisi (DuckDuckGo, Brave Search, Mojeek, Wikipédia, votre instance SearXNG ou un moteur personnalisé)</td><td>Recherche web</td><td>Les mots de la recherche.</td></tr>
+    <tr><td>Sites web consultés</td><td>Lecture d'une page par la recherche web ou le navigateur</td><td>La demande de la page, comme un navigateur.</td></tr>
+    <tr><td>Fournisseur d'IA cloud choisi</td><td>Seulement si vous l'avez configuré</td><td>Voir la section 5.</td></tr>
+    <tr><td>Open-Meteo</td><td>Demande de météo</td><td>Le nom de la ville ou des coordonnées approximatives.</td></tr>
+    <tr><td>Apple (Plans, reconnaissance vocale, Apple Intelligence)</td><td>Itinéraires, dictée, fonctions système</td><td>Selon la politique de confidentialité d'Apple.</td></tr>
+  </table></div>
+  <p>Aucun de ces services ne reçoit d'identifiant publicitaire ou de profil de votre part. Le contenu des pages web lues est traité comme une donnée, jamais comme une instruction.</p>
+
+  <h2 id="server">7. MayDo Server (Mac)</h2>
+  <p>MayDo Server est une app Mac facultative, installée et contrôlée par vous. Si vous l'associez à votre iPhone :</p>
+  <ul>
+    <li>les données que vous choisissez de synchroniser (par exemple tâches, notes, documents, mémoire) sont copiées sur <strong>votre Mac</strong>, chiffrées sur son disque ;</li>
+    <li>vos agents et missions programmées s'y exécutent, avec les seules collections que vous leur autorisez ; chaque accès est inscrit dans un journal consultable ;</li>
+    <li>les échanges entre l'iPhone et le Mac passent par votre réseau local (ou votre VPN), sont chiffrés et authentifiés par les clés créées à l'appairage ;</li>
+    <li>aucun serveur de MayDo ni service cloud ne sert d'intermédiaire ;</li>
+    <li>plusieurs iPhone peuvent être associés au même Mac : chacun garde ses propres données, inaccessibles aux autres.</li>
+  </ul>
+  <p>Révoquer un iPhone dans l'onglet Appairage efface ses données côté Mac. Supprimer MayDo Server et son dossier de données efface tout.</p>
+
+  <h2 id="memoire">8. Mémoire et agents</h2>
+  <p>La mémoire de MayDo ne retient rien sans vous : une information proposée par l'assistant reste « à confirmer » tant que vous ne l'avez pas validée. Vous pouvez la consulter, la corriger ou l'oublier à tout moment dans l'onglet Mémoire. Sous chaque réponse, MayDo indique les éléments de mémoire qu'il a lus.</p>
+  <p>Les agents n'agissent qu'avec les outils et les données que vous leur avez attribués. Les actions sensibles (envoyer un message, créer un évènement) vous sont présentées pour validation, et l'historique des actions est consultable dans Mémoire › Autorisations.</p>
+
+  <h2 id="securite">9. Sécurité</h2>
+  <ul>
+    <li>Les données restent dans l'espace privé de l'app, protégé par le chiffrement d'iOS tant que l'iPhone est verrouillé.</li>
+    <li>Les clés API sont stockées dans le trousseau d'iOS et ne sont jamais transmises à un modèle d'IA.</li>
+    <li>Les échanges avec MayDo Server sont chiffrés de bout en bout entre vos appareils.</li>
+    <li>Les connexions aux services tiers utilisent HTTPS, sauf vers des appareils de votre réseau local que vous avez vous-même ajoutés.</li>
+  </ul>
+  <p>Aucune mesure n'est infaillible : protégez votre iPhone et votre Mac par un code et maintenez-les à jour.</p>
+
+  <h2 id="conservation">10. Conservation et suppression</h2>
+  <p>Vos données sont conservées sur vos appareils tant que vous ne les supprimez pas. Vous pouvez supprimer une conversation, une note, un document ou un souvenir depuis l'app. Supprimer l'app efface toutes ses données locales ; les sauvegardes iOS existantes suivent leur propre cycle, géré par Apple et par vous. Les données conservées par un fournisseur d'IA cloud dépendent de ses conditions.</p>
+
+  <h2 id="droits">11. Vos droits</h2>
+  <p>Vous gardez la maîtrise complète de vos données : consultation, rectification et suppression se font directement dans l'app. Comme nous ne détenons aucune donnée vous concernant, nous ne pouvons ni y accéder ni les transmettre. Pour les données envoyées à un fournisseur cloud, exercez vos droits auprès de lui. Si vous résidez dans l'Union européenne, vous pouvez aussi saisir l'autorité de protection des données de votre pays (en France, la CNIL).</p>
+
+  <h2 id="enfants">12. Enfants</h2>
+  <p>MayDo n'est pas destiné aux enfants. L'app donne accès à Internet sans restriction et à une IA générative ; elle porte une classification d'âge adaptée sur l'App Store. Nous ne collectons sciemment aucune donnée d'enfant.</p>
+
+  <h2 id="apple">13. Apple et TestFlight</h2>
+  <p>L'App Store et TestFlight sont fournis par Apple. Si vous participez à un test, Apple peut nous communiquer votre nom ou votre adresse e-mail d'invitation, des informations sur votre appareil, des statistiques d'utilisation et les rapports de plantage que vous acceptez de partager, ainsi que vos commentaires. Ces informations servent uniquement à améliorer l'app. Les rapports de plantage et d'analyse d'Apple ne sont partagés avec les développeurs que si vous l'avez autorisé dans les réglages d'iOS. Voir la politique de confidentialité d'Apple.</p>
+
+  <h2 id="modifs">14. Modifications</h2>
+  <p>Si cette politique change, la nouvelle version sera publiée sur cette page avec sa date d'entrée en vigueur. Une modification importante, par exemple l'ajout d'un nouveau service tiers, sera aussi signalée dans les notes de version de l'app.</p>
+
+  <h2 id="contact">15. Contact</h2>
+  <p>Pour toute question sur cette politique ou sur vos données : <a href="https://github.com/Oneil974/maydo/issues/new">ouvrez une demande sur GitHub</a>. Évitez d'y publier des informations personnelles : la demande est publique. Indiquez seulement que vous souhaitez un échange privé si nécessaire.</p>
+
+  <h2 id="en">Privacy policy (English)</h2>
+  <p class="meta">Effective October 27, 2026 · applies to MayDo for iPhone and MayDo Server for Mac.</p>
+  <div class="summary">
+    <strong>Summary</strong>
+    <ul>
+      <li><strong>We do not collect any personal data.</strong> No account, no central server, no ads, no analytics, no tracking.</li>
+      <li>Your conversations, notes, tasks, documents and memories are stored <strong>on your iPhone</strong>, and on your Mac if you use MayDo Server.</li>
+      <li>On-device AI models run <strong>locally</strong>; no text leaves your device when you use them.</li>
+      <li>Some features contact <strong>third-party services you choose</strong> (cloud AI provider, web search engine, model downloads), as described below.</li>
+    </ul>
+  </div>
+  <h3>Data we collect</h3>
+  <p>None. We run no server that receives your data and include no advertising, analytics or tracking SDK. We do not sell or share data and do not track you across apps or websites. The only information we may receive is what you choose to send us (a support request or TestFlight feedback), used solely to reply and improve the app.</p>
+  <h3>Data stored on your devices</h3>
+  <p>Conversations, notes, tasks, projects, documents, searchable folders, saved app outputs, memory (confirmed items and pending suggestions), agents and their reports, settings and downloaded models are stored in the app's private storage. Cloud API keys are kept in the iOS Keychain. This data is included in your iPhone backups according to your iOS settings.</p>
+  <h3>iOS permissions</h3>
+  <p>Calendar, Reminders, Contacts, Health (read-only), Location (while using), Microphone and Speech Recognition, Camera and Photos, Music, Local Network, Bluetooth and Motion are requested only when a feature needs them, and can be revoked in iOS Settings or switched off per source in Memory › Permissions. Health data never leaves your iPhone unless you give a separate, explicit permission for a cloud model, and is never used for advertising.</p>
+  <h3>AI models</h3>
+  <p>On-device models (such as Liquid AI) and Apple Intelligence process everything locally. If you configure a cloud AI provider with your own API key (OpenAI, Anthropic, Mistral, Google Gemini, Groq, OpenRouter, xAI, DeepSeek or a compatible server), your requests and the data needed to answer them are sent directly from your iPhone to that provider, under its own terms and privacy policy. We never receive them. Personal data is attached only if “Send my data to the remote model” is enabled.</p>
+  <h3>Third-party services</h3>
+  <p>Depending on the features you use: Hugging Face (model downloads), your chosen web search engine (DuckDuckGo, Brave Search, Mojeek, Wikipedia, your SearXNG instance or a custom engine) and the websites read, your chosen cloud AI provider, Open-Meteo (weather: city or approximate coordinates) and Apple services (Maps, speech recognition, Apple Intelligence). These services may see your device's IP address, as with any Internet connection.</p>
+  <h3>MayDo Server</h3>
+  <p>The optional Mac app runs on a Mac you control. Data you choose to sync is copied to your Mac and encrypted at rest; iPhone–Mac traffic stays on your local network or VPN and is encrypted and authenticated with keys created at pairing. No MayDo server or cloud service is involved. Each paired iPhone keeps its data separate. Revoking an iPhone erases its server-side data.</p>
+  <h3>Retention, deletion and your rights</h3>
+  <p>Data stays on your devices until you delete it in the app or delete the app. As we hold no data about you, access, correction and deletion are done directly in the app. For data sent to a cloud provider, contact that provider. EU residents may contact their data protection authority.</p>
+  <h3>Children</h3>
+  <p>MayDo is not intended for children: it provides unrestricted web access and generative AI and carries an appropriate App Store age rating. We do not knowingly collect children's data.</p>
+  <h3>Apple and TestFlight</h3>
+  <p>When you take part in a TestFlight beta, Apple may share with us your invitation name or email, device information, usage statistics and crash reports you agree to share, and your feedback, used only to improve the app.</p>
+  <h3>Changes and contact</h3>
+  <p>Changes will be posted on this page with a new effective date. Questions: <a href="https://github.com/Oneil974/maydo/issues/new">open an issue on GitHub</a> (issues are public; do not post personal information).</p>
+</main>
+
+<footer class="site"><div class="wrap">
+  <span>© 2026 MayDo · Oneil974</span>
+  <a href="./">Accueil</a>
+  <a href="support.html">Assistance</a>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Assistance MayDo</title>
+<meta name="description" content="Assistance de MayDo : contact, questions fréquentes, modèles d'IA, MayDo Server, données et confidentialité.">
+<link rel="icon" href="assets/icon.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <img src="assets/icon.png" alt="">
+  <a class="brand" href="./">May<span>Do</span></a>
+  <nav class="links"><a href="./">Accueil</a><a href="support.html" aria-current="page">Assistance</a><a href="privacy.html">Confidentialité</a></nav>
+</div></header>
+
+<main class="doc wrap">
+  <h1>Assistance</h1>
+  <p class="meta">MayDo pour iPhone · MayDo Server pour Mac · <a href="#en">English below</a></p>
+
+  <div class="summary">
+    <strong>Nous contacter</strong>
+    <ul>
+      <li>Signaler un problème ou poser une question : <a href="https://github.com/Oneil974/maydo/issues/new">ouvrir une demande sur GitHub</a> (un compte GitHub gratuit suffit).</li>
+      <li>Testeurs TestFlight : utilisez aussi « Envoyer un commentaire » dans l'app TestFlight, avec une capture d'écran si possible.</li>
+      <li>Nous répondons en français ou en anglais, en général sous quelques jours.</li>
+    </ul>
+    <p style="margin:10px 0 0">Pour un problème, indiquez si possible : le modèle d'iPhone, la version d'iOS, la version de MayDo (Réglages › À propos), le moteur d'IA utilisé et les étapes pour reproduire. N'envoyez jamais de mot de passe ni de clé API.</p>
+  </div>
+
+  <h2>Premiers pas</h2>
+  <details><summary>Faut-il créer un compte ?</summary><p>Non. MayDo fonctionne sans compte et sans inscription. Vos données restent sur votre iPhone, et sur votre Mac si vous utilisez MayDo Server.</p></details>
+  <details><summary>Quel modèle d'IA choisir au premier lancement ?</summary><p>Le démarrage express propose un modèle local de Liquid AI adapté à l'iPhone. Il est téléchargé une seule fois depuis Hugging Face (de quelques centaines de Mo à quelques Go), puis fonctionne hors ligne. Sur les appareils compatibles, Apple Intelligence est aussi disponible. Vous pouvez changer de moteur à tout moment avec le sélecteur en haut de l'accueil.</p></details>
+  <details><summary>L'app a besoin de beaucoup d'espace ou de mémoire ?</summary><p>Un modèle local occupe de l'espace de stockage et, pendant une réponse, de la mémoire vive. La pastille de ressources en haut de l'accueil indique la mémoire utilisée et la température de l'appareil. Touchez-la puis « Éjecter » pour libérer la mémoire d'un modèle.</p></details>
+  <details><summary>À quoi sert le @ dans le champ de demande ?</summary><p>Tapez @ pour choisir un outil précis (recherche web, mémoire, tâches, document…). MayDo est alors obligé de l'utiliser avant de répondre, et la réponse s'affiche une fois l'outil exécuté.</p></details>
+
+  <h2>Réponses et modèles d'IA</h2>
+  <details><summary>« Le contexte local est trop petit »</summary><p>Le contexte est la mémoire de travail du modèle. Augmentez-le dans Réglages › Modèle (8 192 jetons ou plus pour la recherche web), ou réduisez la longueur des réponses. Le mode Économie d'énergie de l'iPhone limite le contexte à 2 048 jetons, quel que soit le réglage : désactivez-le ou rechargez l'iPhone.</p></details>
+  <details><summary>Une réponse s'interrompt ou l'app ralentit</summary><p>Les gros modèles demandent beaucoup de mémoire. Fermez les autres apps, choisissez un modèle plus léger ou éjectez les modèles inutilisés depuis la pastille de ressources. Une réponse interrompue peut être reprise avec « Reprendre ».</p></details>
+  <details><summary>Que montre le bouton ⓘ sous une réponse ?</summary><p>Les statistiques de génération : vitesse en jetons par seconde, jetons produits, durée, et le détail de chaque appel au modèle (iPhone, API ou MayDo Server). Le signe ≈ indique une estimation quand le fournisseur ne communique pas les jetons.</p></details>
+  <details><summary>Utiliser un modèle dans le cloud</summary><p>Dans Réglages › Moteur, choisissez un fournisseur (OpenAI, Anthropic, Mistral, Google Gemini, Groq, OpenRouter…) et saisissez votre propre clé API. La clé est conservée dans le trousseau de l'iPhone. Vos demandes partent alors chez ce fournisseur, selon ses conditions. Les données personnelles (agenda, tâches, santé…) ne lui sont envoyées que si vous l'autorisez dans Mémoire › Autorisations.</p></details>
+  <details><summary>La recherche web ne trouve rien ou se trompe de sujet</summary><p>Vérifiez la connexion et le moteur choisi dans Réglages › Recherche web (DuckDuckGo, Brave, Mojeek, Wikipédia ou votre instance SearXNG). Pour résumer une page précise, collez son adresse : MayDo la lit directement.</p></details>
+
+  <h2>Mémoire et données</h2>
+  <details><summary>Que contient l'onglet Mémoire ?</summary><p>Vos contenus (notes, documents, dossiers interrogeables, tâches, productions des apps, conversations), ce que MayDo a retenu de vous, et les autorisations. Une seule recherche parcourt l'ensemble.</p></details>
+  <details><summary>MayDo retient-il des choses sans me le dire ?</summary><p>Non. Quand l'assistant propose de retenir une information, elle arrive dans Mémoire › Retenu › À confirmer. Vous pouvez la valider ou l'oublier. Désactivez « Proposer de nouveaux souvenirs » dans Autorisations pour ne plus recevoir de propositions.</p></details>
+  <details><summary>Empêcher l'assistant de lire certaines données</summary><p>Mémoire › Autorisations : un interrupteur par source (tâches et notes, documents, agenda, rappels, contacts, santé, position, recherche web, musique, photos). Une source désactivée n'est plus lue ni par l'assistant, ni par la recherche, ni par les agents. Vous pouvez aussi retirer un accès dans Réglages iOS › Confidentialité.</p></details>
+  <details><summary>Supprimer mes données</summary><p>Une conversation, une note ou un souvenir se supprime depuis l'app. Pour tout effacer, supprimez l'app de l'iPhone : toutes ses données locales disparaissent avec elle. Si vous utilisez MayDo Server, révoquez l'iPhone dans l'onglet Appairage du Mac pour effacer ses données côté serveur.</p></details>
+  <details><summary>Sauvegarde et changement d'iPhone</summary><p>Les données de MayDo font partie de la sauvegarde de l'iPhone (iCloud ou ordinateur) selon vos réglages iOS. Les modèles d'IA téléchargés ne sont pas sauvegardés : ils se téléchargent à nouveau.</p></details>
+
+  <h2>MayDo Server (Mac)</h2>
+  <details><summary>À quoi sert MayDo Server ?</summary><p>C'est une app Mac facultative. Elle fait tourner vos agents et vos missions programmées sur le Mac, même quand l'iPhone est éteint, et peut fournir un moteur d'IA plus puissant à l'iPhone.</p></details>
+  <details><summary>Associer l'iPhone au Mac</summary><p>Sur le Mac, ouvrez MayDo Server › Appairage pour afficher le QR code. Sur l'iPhone : Réglages › MayDo Server › Scanner. Autorisez MayDo Server à accéder au réseau local quand macOS le demande (Réglages Système › Confidentialité et sécurité › Réseau local).</p></details>
+  <details><summary>« MayDo Server injoignable »</summary><p>Vérifiez que le Mac est allumé, réveillé, que MayDo Server est ouvert et que les deux appareils sont sur le même réseau (ou sur votre VPN). Si l'adresse du Mac a changé, l'iPhone le retrouve automatiquement sur le réseau local.</p></details>
+  <details><summary>La connexion est-elle sécurisée ?</summary><p>Oui. L'iPhone et le Mac échangent des clés au moment de l'appairage ; chaque échange est ensuite chiffré et authentifié. Aucun serveur intermédiaire ni service cloud de MayDo n'intervient.</p></details>
+
+  <h2>TestFlight</h2>
+  <details><summary>Installer la version de test</summary><p>Installez l'app TestFlight depuis l'App Store, ouvrez l'invitation reçue par e-mail, puis installez MayDo. Une version de test reste valable 90 jours ; les mises à jour arrivent dans TestFlight.</p></details>
+  <details><summary>Envoyer un retour</summary><p>Dans l'app TestFlight : MayDo › Envoyer un commentaire. Vous pouvez aussi faire une capture d'écran dans MayDo : TestFlight propose de l'envoyer avec un commentaire.</p></details>
+
+  <h2>Confidentialité</h2>
+  <p>MayDo ne collecte aucune donnée personnelle : pas de compte, pas de publicité, pas de mesure d'audience. Le détail est dans la <a href="privacy.html">politique de confidentialité</a>.</p>
+
+  <h2 id="en">Support (English)</h2>
+  <div class="summary">
+    <strong>Contact us</strong>
+    <ul>
+      <li>Report a problem or ask a question: <a href="https://github.com/Oneil974/maydo/issues/new">open an issue on GitHub</a> (a free GitHub account is enough).</li>
+      <li>TestFlight testers: you can also use “Send Beta Feedback” in the TestFlight app.</li>
+      <li>We answer in English or French, usually within a few days. Never send passwords or API keys.</li>
+    </ul>
+  </div>
+  <h3>Frequently asked questions</h3>
+  <details><summary>Do I need an account?</summary><p>No. MayDo works without any account. Your data stays on your iPhone, and on your Mac if you use MayDo Server.</p></details>
+  <details><summary>Which AI model should I use?</summary><p>Quick start offers an on-device Liquid AI model, downloaded once from Hugging Face and then usable offline. Apple Intelligence is available on compatible devices. You may also connect a cloud provider with your own API key; requests are then sent to that provider under its terms.</p></details>
+  <details><summary>“The local context is too small”</summary><p>Increase the context in Settings › Model (8,192 tokens or more for web search). iPhone Low Power Mode limits the context to 2,048 tokens regardless of the setting.</p></details>
+  <details><summary>Control what the assistant can read</summary><p>Memory › Permissions has one switch per data source. A disabled source is no longer read by the assistant, search or agents. New memories always wait for your confirmation.</p></details>
+  <details><summary>Delete my data</summary><p>Delete items in the app, or delete the app to erase all its local data. With MayDo Server, revoke the iPhone in the Mac's Pairing tab to erase its server-side data.</p></details>
+  <details><summary>MayDo Server cannot be reached</summary><p>Make sure the Mac is awake, MayDo Server is open, both devices are on the same network (or VPN) and local network access is allowed in macOS privacy settings.</p></details>
+</main>
+
+<footer class="site"><div class="wrap">
+  <span>© 2026 MayDo · Oneil974</span>
+  <a href="./">Accueil</a>
+  <a href="privacy.html">Politique de confidentialité</a>
+  <a href="privacy.html#en">Privacy policy</a>
+</div></footer>
+</body>
+</html>
